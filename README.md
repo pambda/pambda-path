@@ -3,16 +3,16 @@
 ## Installation
 
 ```
-npm i pambda-serve-static -S
+npm i pambda-path
 ```
 
 ## Usage
 
 ``` javascript
-import { compose, createLambda } from 'pambda';
-import { path, combineByPath } from 'pambda-path';
+const { compose, createLambda } = require('pambda');
+const { path, combineByPath } = require('pambda-path');
 
-export const handler = createLambda(
+exports.handler = createLambda(
   compose(
     path('/', next => (event, context, callback) => {
       // Render top page.
