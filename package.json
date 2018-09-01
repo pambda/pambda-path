@@ -8,7 +8,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^4.18.2"
+    "eslint": "^4.18.2",
+    "tape": "^4.9.1"
   },
   "homepage": "https://github.com/pambda/pambda-path",
   "keywords": [
@@ -25,7 +26,8 @@
   "scripts": {
     "lint": "eslint lib",
     "prepublishOnly": "npm run lint",
-    "postpublish": "npm-sns"
+    "postpublish": "npm-sns",
+    "test": "tape test/*.js"
   },
   "files": [
     "README.md",
