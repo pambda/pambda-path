@@ -29,6 +29,14 @@ exports.handler = createLambda(
 );
 ```
 
+## path(path, pambda)
+
+Generate a pambda that runs a specified pambda only if a path of an event exactly matches to a specified path.
+
+- `path`
+- `pambda`
+    - A pambda function that is executed if a path matched.
+
 ## Related
 
 - [pambda-router](https://github.com/pambda/pambda-router)
